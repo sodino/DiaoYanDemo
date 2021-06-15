@@ -15,32 +15,43 @@ import kotlinx.coroutines.MainScope
 class MainActivity :
     AppCompatActivity(),
     CoroutineScope by MainScope(), View.OnClickListener {
-    val imgs1 = mutableListOf<String>(
-                        "1/1原图.jpg",
-                        "1/1A.jpg",
-                        "1/1B.jpg",
-                        "1/1C.jpg",
-                        "1/1D.jpg",
-                        "1/1E.jpg",
-                        "1/1F.jpg"
+    val imgs1 = mutableListOf<String>( // 滤镜组
+                        "1/自拍-原图.jpg",
+                        "1/A1.jpg",
+                        "1/A2.jpg",
+                        "1/A3.jpg",
+                        "1/A4.jpg",
+                        "1/A5.jpg",
+                        "1/A6.jpg",
+                        "1/A7.jpg",
+                        "1/A8.JPG",
+                        "1/A9.JPG"
                 )
-    val imgs2 = mutableListOf<String>(
-                        "2/2原图.jpg",
-                        "2/2A.jpg",
-                        "2/2B.jpg",
-                        "2/2C.jpg",
-                        "2/2D.jpg",
-                        "2/2E.jpg",
-                        "2/2F.jpg"
+    val imgs2 = mutableListOf<String>( // 素材组
+                        "2/原图.jpg",
+                        "2/C1.jpg",
+                        "2/C10.jpg",
+                        "2/C2.jpg",
+                        "2/C3.jpg",
+                        "2/C4.jpg",
+                        "2/C5.jpg",
+                        "2/C6.jpg",
+                        "2/C7.jpg",
+                        "2/C7翅膀补图.jpg",
+                        "2/C8.jpg",
+                        "2/C9.jpg"
                 )
-    val imgs3 = mutableListOf<String>(
-                        "3/3原图.jpg",
-                        "3/3A.jpg",
-                        "3/3B.jpg",
-                        "3/3C.jpg",
-                        "3/3D.jpg",
-                        "3/3E.jpg",
-                        "3/3F.jpg"
+    val imgs3 = mutableListOf<String>( // 妆容组
+                        "3/原图.jpg",
+                        "3/B1.jpg",
+                        "3/B2.jpg",
+                        "3/B3.jpg",
+                        "3/B4.jpg",
+                        "3/B5.jpg",
+                        "3/B6.jpg",
+                        "3/B7.jpg",
+                        "3/B8.jpg",
+                        "3/B9.jpg"
                 )
     val mapBitmap = mutableMapOf<String, Bitmap>()
     val adapter = ImgAdapter()
